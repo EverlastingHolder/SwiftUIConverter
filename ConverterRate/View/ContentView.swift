@@ -44,9 +44,6 @@ struct ContentView: View {
                 ListItemView(count: self.$count)
             }
             ListItemView(count: self.$count)
-                .refreshable {
-                    async { self.viewModel.getValute() }
-                }
         }
     }
 }

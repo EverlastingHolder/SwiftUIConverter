@@ -89,8 +89,8 @@
 		09E51233267A5BAC0019CA2C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				09FEFF7D2679CB4600887115 /* ValuteService.swift */,
 				09FEFF8C2679CB7200887115 /* Agent.swift */,
+				09FEFF7D2679CB4600887115 /* ValuteService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

@@ -25,4 +25,16 @@ class ViewModel: BaseViewModel, ObservableObject {
             }
             .store(in: &self.bag)
     }
+    
+    func selectedValute(key: String, value: Double) {
+        for (keyold, valueold) in self.valute.rates {
+            if key != keyold {
+                self.valute.rates.updateValue(valueold/value, forKey: keyold)
+            }
+        }
+        self.valute.rates.updateValue(1 / value, forKey: self.valute.base)
+        self.valute.base = key
+        self.valute.rates.removeValue(forKey: key)
+        self.isSelect = false
+    }
 }

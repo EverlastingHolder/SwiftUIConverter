@@ -39,7 +39,7 @@ struct ListItemView: View {
                     }
                     .lineLimit(1)
                 }
-            }
+            }.listSectionSeparator(.hidden)
         }
         .listStyle(.plain)
     }

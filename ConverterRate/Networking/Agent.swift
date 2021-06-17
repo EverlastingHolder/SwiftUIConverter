@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 import Foundation
 
-class Agent {
+final class Agent {
     private let session: URLSession = .shared
     
     private let base: URL = URL(string: "https://www.cbr-xml-daily.ru/latest.js")!

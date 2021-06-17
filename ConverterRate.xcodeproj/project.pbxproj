@@ -132,14 +132,14 @@
 		09FEFF692679CA7800887115 /* ConverterRate */ = {
 			isa = PBXGroup;
 			children = (
-				09E51235267A5BD70019CA2C /* Utils */,
-				09E51234267A5BBF0019CA2C /* Extenstion */,
-				09E51233267A5BAC0019CA2C /* Networking */,
-				09E51232267A5B2D0019CA2C /* Model */,
+				09FEFF6E2679CA7800887115 /* Assets.xcassets */,
 				09E51231267A5B160019CA2C /* App */,
 				09E5122E267A5B030019CA2C /* View */,
 				09E5122D267A5AE70019CA2C /* ViewModel */,
-				09FEFF6E2679CA7800887115 /* Assets.xcassets */,
+				09E51232267A5B2D0019CA2C /* Model */,
+				09E51233267A5BAC0019CA2C /* Networking */,
+				09E51234267A5BBF0019CA2C /* Extenstion */,
+				09E51235267A5BD70019CA2C /* Utils */,
 				09FEFF702679CA7800887115 /* Preview Content */,
 			);
 			path = ConverterRate;

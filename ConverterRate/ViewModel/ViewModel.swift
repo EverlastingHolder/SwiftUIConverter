@@ -6,6 +6,9 @@ class ViewModel: BaseViewModel, ObservableObject {
     @Environment(\.valuteService)
     private var service: ValuteService
     
+    @Environment(\.managedObjectContext)
+    private var context
+    
     @Published var valute: Valute = Valute()
     @Published var isSelect: Bool = false
     
@@ -26,7 +29,18 @@ class ViewModel: BaseViewModel, ObservableObject {
             .store(in: &self.bag)
     }
     
-    func selectedValute(key: String, value: Double) {
+    func addCoreData() {
+        let valutes = Valutes(context: self.context)
+        valutes.base = self.valute.base
+        
+        do {
+           try self.context.save()
+        } catch {
+            print("Error Core Data: \(error)")
+        }
+    }
+    
+    func updateSelectedValute(key: String, value: Double) {
         for (keyold, valueold) in self.valute.rates {
             if key != keyold {
                 self.valute.rates.updateValue(valueold/value, forKey: keyold)

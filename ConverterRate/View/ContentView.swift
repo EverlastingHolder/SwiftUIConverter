@@ -19,6 +19,7 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.viewModel.isSelect.toggle()
+                        self.viewModel.addCoreData()
                     }) {
                         Text(String.flagCountry(self.viewModel.valute.base))
                             .font(.largeTitle)

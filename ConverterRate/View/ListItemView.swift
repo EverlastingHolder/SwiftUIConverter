@@ -14,7 +14,7 @@ struct ListItemView: View {
             ForEach(self.viewModel.valute.rates.sorted(by: <), id: \.key) { key, value in
                 if self.viewModel.isSelect{
                     Button(action:{
-                        self.viewModel.selectedValute(key: key, value: value)
+                        self.viewModel.updateSelectedValute(key: key, value: value)
                     }){
                         HStack {
                             GroupValuteView(flag: key, name: "")

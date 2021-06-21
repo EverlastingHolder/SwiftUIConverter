@@ -5,14 +5,11 @@ import Combine
 @main
 struct ConverterRateApp: App {
     @ObservedObject
-    private var viewModel: ViewModel = .init()
-    
-    let container = PersistenceController.shared
-    
+    private var viewModel: ValuteView.ViewModel = .init()
+        
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, self.container.container.viewContext)
                 .environmentObject(self.viewModel)
                 .task {
                     if self.viewModel.valute.date != Date().format {

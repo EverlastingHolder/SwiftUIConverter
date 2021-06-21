@@ -5,20 +5,10 @@ import Combine
 @available(iOS 15.0, *)
 struct ValuteView: View {
     @EnvironmentObject
-    private var viewModel: ViewModel
+    private var viewModel: Self.ViewModel
     
     @State
     private var count: String = "1"
-    
-    @FetchRequest(
-        entity: Valutes.entity(),
-        sortDescriptors: [
-            NSSortDescriptor(keyPath: \Valutes.base, ascending: true)
-        ],
-        animation: .default
-    )
-    var items: FetchedResults<Valutes>
-    
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -50,9 +40,9 @@ struct ValuteView: View {
             }
             .padding(.horizontal, 18)
             .sheet(isPresented: self.$viewModel.isSelect) {
-                ValuteListItemView(valute: self.items, count: self.$count)
+                ValuteListItemView(count: self.$count)
             }
-            ValuteListItemView(valute: self.items,count: self.$count)
+            ValuteListItemView(count: self.$count)
         }
     }
 }

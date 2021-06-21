@@ -6,7 +6,7 @@ import Combine
 struct ContentView: View {
     
     @EnvironmentObject
-    private var viewModel: ViewModel
+    private var viewModel: ValuteView.ViewModel
     
     var body: some View {
         if self.viewModel.isError {

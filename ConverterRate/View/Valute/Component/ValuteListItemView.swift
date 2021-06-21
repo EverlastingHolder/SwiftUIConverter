@@ -4,9 +4,7 @@ import SwiftUI
 struct ValuteListItemView: View {
     
     @EnvironmentObject
-    private var viewModel: ViewModel
-    
-    var valute: FetchedResults<Valutes>
+    private var viewModel: ValuteView.ViewModel
     
     @Binding
     var count: String

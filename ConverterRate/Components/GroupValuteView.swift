@@ -3,7 +3,6 @@ import SwiftUI
 struct GroupValuteView: View {
     
     @State var flag: String
-    @State var name: String
     
     var body: some View {
         HStack {
@@ -12,9 +11,6 @@ struct GroupValuteView: View {
             
             VStack(alignment: .leading) {
                 Text(self.flag)
-                Text(self.name)
-                    .font(.footnote)
-                    .foregroundColor(.gray)
             }
         }
     }

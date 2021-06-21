@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090D690D26805CD300712107 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D690C26805CD300712107 /* Date.swift */; };
+		090D69102680616D00712107 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D690F2680616D00712107 /* View.swift */; };
 		09655D5B2679E8A00098ED8A /* ValuteListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655D5A2679E8A00098ED8A /* ValuteListItemView.swift */; };
 		09789B36267BA8C3006B59DB /* ConvertRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09789B35267BA8C3006B59DB /* ConvertRateApp.swift */; };
 		09BC0C0E267BA84B0084190D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BC0C0D267BA84B0084190D /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		090D690C26805CD300712107 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		090D690F2680616D00712107 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		09655D5A2679E8A00098ED8A /* ValuteListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteListItemView.swift; sourceTree = "<group>"; };
 		09789B35267BA8C3006B59DB /* ConvertRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertRateApp.swift; sourceTree = "<group>"; };
 		09BC0C0D267BA84B0084190D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				09FEFF812679CB5000887115 /* String.swift */,
 				09C97D0E267EF8C200232C58 /* Published.swift */,
 				090D690C26805CD300712107 /* Date.swift */,
+				090D690F2680616D00712107 /* View.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				09C2F7612680587500C93B9B /* ValuteView.swift in Sources */,
 				09C10B69267C7323003B3908 /* Persistence.swift in Sources */,
 				09FEFF792679CAA500887115 /* Valute.swift in Sources */,
+				090D69102680616D00712107 /* View.swift in Sources */,
 				09FEFF7B2679CB3100887115 /* Schedule.swift in Sources */,
 				09FEFF8D2679CB7200887115 /* Agent.swift in Sources */,
 				09E51230267A5B120019CA2C /* ContentView.swift in Sources */,

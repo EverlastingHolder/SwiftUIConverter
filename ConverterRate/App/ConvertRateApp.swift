@@ -15,7 +15,9 @@ struct ConverterRateApp: App {
                 .environment(\.managedObjectContext, self.container.container.viewContext)
                 .environmentObject(self.viewModel)
                 .task {
-                    self.viewModel.getValute()
+                    if self.viewModel.valute.date != Date().format {
+                        self.viewModel.getValute()
+                    }
                 }
         }
     }

@@ -9,8 +9,9 @@ class ViewModel: BaseViewModel, ObservableObject {
     @Environment(\.managedObjectContext)
     private var context
     
-    @Published var valute: Valute = Valute()
+    @Published var isError: Bool = false
     @Published var isSelect: Bool = false
+    @Published("valute") var valute: Valute = Valute()
     
     func getValute() {
         self.service.get()
@@ -19,7 +20,8 @@ class ViewModel: BaseViewModel, ObservableObject {
             .sink(receiveCompletion: { (completion) in
                 switch completion {
                 case let .failure(error):
-                    print("\(error)")
+                    self.isError = true
+                    print(error)
                 case .finished:
                     break
                 }
@@ -27,17 +29,6 @@ class ViewModel: BaseViewModel, ObservableObject {
                 self.valute = result
             }
             .store(in: &self.bag)
-    }
-    
-    func addCoreData() {
-        let valutes = Valutes(context: self.context)
-        valutes.base = self.valute.base
-        
-        do {
-           try self.context.save()
-        } catch {
-            print("Error Core Data: \(error)")
-        }
     }
     
     func updateSelectedValute(key: String, value: Double) {

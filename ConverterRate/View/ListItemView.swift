@@ -6,6 +6,8 @@ struct ListItemView: View {
     @EnvironmentObject
     private var viewModel: ViewModel
     
+    var valute: FetchedResults<Valutes>
+    
     @Binding
     var count: String
     

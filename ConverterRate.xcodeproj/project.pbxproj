@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090D690D26805CD300712107 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090D690C26805CD300712107 /* Date.swift */; };
-		09655D5B2679E8A00098ED8A /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655D5A2679E8A00098ED8A /* ListItemView.swift */; };
+		09655D5B2679E8A00098ED8A /* ValuteListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09655D5A2679E8A00098ED8A /* ValuteListItemView.swift */; };
 		09789B36267BA8C3006B59DB /* ConvertRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09789B35267BA8C3006B59DB /* ConvertRateApp.swift */; };
 		09BC0C0E267BA84B0084190D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BC0C0D267BA84B0084190D /* Preview Assets.xcassets */; };
 		09C10B67267C72EA003B3908 /* Convert.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09C10B65267C72EA003B3908 /* Convert.xcdatamodeld */; };
@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		090D690C26805CD300712107 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		09655D5A2679E8A00098ED8A /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		09655D5A2679E8A00098ED8A /* ValuteListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuteListItemView.swift; sourceTree = "<group>"; };
 		09789B35267BA8C3006B59DB /* ConvertRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertRateApp.swift; sourceTree = "<group>"; };
 		09BC0C0D267BA84B0084190D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09C10B66267C72EA003B3908 /* Convert.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Convert.xcdatamodel; sourceTree = "<group>"; };
@@ -70,6 +70,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090D690E26805E6B00712107 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				09C2F7592680560800C93B9B /* ErrorVIew.swift */,
+				09FEFF862679CB5F00887115 /* GroupValuteView.swift */,
+				09C2F75E2680576900C93B9B /* LottieView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		09BC0C0C267BA84B0084190D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +107,9 @@
 		09E5122E267A5B030019CA2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09FEFF862679CB5F00887115 /* GroupValuteView.swift */,
-				09655D5A2679E8A00098ED8A /* ListItemView.swift */,
+				09655D5A2679E8A00098ED8A /* ValuteListItemView.swift */,
 				09E5122F267A5B120019CA2C /* ContentView.swift */,
 				09C2F7602680587500C93B9B /* ValuteView.swift */,
-				09C2F7592680560800C93B9B /* ErrorVIew.swift */,
-				09C2F75E2680576900C93B9B /* LottieView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 		09E51235267A5BD70019CA2C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				09C10B68267C7323003B3908 /* Persistence.swift */,
 				09FEFF7A2679CB3100887115 /* Schedule.swift */,
 				09FEFF8A2679CB6F00887115 /* BaseViewModel.swift */,
 			);
@@ -172,6 +180,7 @@
 		09FEFF692679CA7800887115 /* ConverterRate */ = {
 			isa = PBXGroup;
 			children = (
+				090D690E26805E6B00712107 /* Components */,
 				09BC0C0C267BA84B0084190D /* Preview Content */,
 				09FEFF6E2679CA7800887115 /* Assets.xcassets */,
 				09E51231267A5B160019CA2C /* App */,
@@ -182,7 +191,6 @@
 				09E51234267A5BBF0019CA2C /* Extenstion */,
 				09E51235267A5BD70019CA2C /* Utils */,
 				09C10B65267C72EA003B3908 /* Convert.xcdatamodeld */,
-				09C10B68267C7323003B3908 /* Persistence.swift */,
 			);
 			path = ConverterRate;
 			sourceTree = "<group>";
@@ -267,7 +275,7 @@
 				09FEFF872679CB5F00887115 /* GroupValuteView.swift in Sources */,
 				09C2F75F2680576900C93B9B /* LottieView.swift in Sources */,
 				09789B36267BA8C3006B59DB /* ConvertRateApp.swift in Sources */,
-				09655D5B2679E8A00098ED8A /* ListItemView.swift in Sources */,
+				09655D5B2679E8A00098ED8A /* ValuteListItemView.swift in Sources */,
 				09FEFF8B2679CB6F00887115 /* BaseViewModel.swift in Sources */,
 				09FEFF7F2679CB4600887115 /* ValuteService.swift in Sources */,
 				09FEFF832679CB5000887115 /* URLRequest.swift in Sources */,

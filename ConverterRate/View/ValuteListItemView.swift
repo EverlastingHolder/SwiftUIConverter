@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 15.0, *)
-struct ListItemView: View {
+struct ValuteListItemView: View {
     
     @EnvironmentObject
     private var viewModel: ViewModel

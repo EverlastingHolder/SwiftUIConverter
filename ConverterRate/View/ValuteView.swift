@@ -50,9 +50,9 @@ struct ValuteView: View {
             }
             .padding(.horizontal, 18)
             .sheet(isPresented: self.$viewModel.isSelect) {
-                ListItemView(valute: self.items, count: self.$count)
+                ValuteListItemView(valute: self.items, count: self.$count)
             }
-            ListItemView(valute: self.items,count: self.$count)
+            ValuteListItemView(valute: self.items,count: self.$count)
         }
     }
 }

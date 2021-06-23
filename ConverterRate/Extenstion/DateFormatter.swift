@@ -1,10 +1,10 @@
 import Foundation
 
-extension Date {
-    var format: String {
+extension DateFormatter {
+    static let shortFormatDate: DateFormatter = {
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "yyyy-MM-dd"
         
-        return dateFormat.string(from: Date())
-    }
+        return dateFormat
+    }()
 }

@@ -12,7 +12,7 @@ struct ConverterRateApp: App {
             ContentView()
                 .environmentObject(self.viewModel)
                 .task {
-                    if self.viewModel.valute.date != Date().format {
+                    if self.viewModel.valute.date != DateFormatter.shortFormatDate.string(from: Date()) {
                         self.viewModel.getValute()
                     }
                 }

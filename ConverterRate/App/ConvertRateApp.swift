@@ -4,7 +4,7 @@ import Combine
 @available(iOS 15.0, *)
 @main
 struct ConverterRateApp: App {
-    @ObservedObject
+    @StateObject
     private var viewModel: ValuteView.ViewModel = .init()
         
     var body: some Scene {
